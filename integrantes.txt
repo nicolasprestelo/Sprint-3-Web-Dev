@@ -1,0 +1,6 @@
+Segue integrantes da equipe Hello World Corporation
+
+  nome: Jonathan Josué --- RM: 569810 
+  nome: Nicolas Prestelo --- RM: 570785
+  nome: Murilo Serrano --- RM: 569296
+  nome: Enzo Palumbo --- RM: 569171 
