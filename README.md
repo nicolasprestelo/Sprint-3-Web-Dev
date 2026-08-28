@@ -152,7 +152,7 @@ O projeto está disponível online através da Vercel e GitHub:
 
 **https://github.com/nicolasprestelo/Sprint-3-Web-Dev**
 
-**https://v0-sprint-3-web-dev-hello-world.vercel.app/**
+**https://sprint-3-web-dev-hello-world.vercel.app/**
 
 ## Licença
 
