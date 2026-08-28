@@ -148,9 +148,11 @@ Os integrantes da equipe também são definidos em `src/data/equipe.js` e render
 
 ## Deploy
 
-O projeto está disponível online através da Vercel:
+O projeto está disponível online através da Vercel e GitHub:
 
-**https://sprint3-web-dev-psi.vercel.app/**
+**https://github.com/nicolasprestelo/Sprint-3-Web-Dev**
+
+**https://v0-sprint-3-web-dev-hello-world.vercel.app/**
 
 ## Licença
 
