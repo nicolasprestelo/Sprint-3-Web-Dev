@@ -7,6 +7,7 @@ O projeto conta com uma **landing page responsiva**, sistema de autenticação d
 ## Funcionalidades
 
 * Landing page com apresentação do projeto, funcionalidades, benefícios e equipe.
+* **Seção do Protótipo JOVI** — preview interativo com animação discreta e acesso ao protótipo HTML.
 * Login demonstrativo com validação de campos e mensagens de feedback.
 * Dashboard protegido após a autenticação.
 * Atalhos para anotações, flashcards e resumos.
@@ -30,10 +31,22 @@ O projeto conta com uma **landing page responsiva**, sistema de autenticação d
 
 Durante o desenvolvimento e evolução do projeto, foi utilizado o **Claude** como ferramenta de apoio ao desenvolvimento.
 
+### Protótipo JOVI
+
+O **Protótipo JOVI** foi desenvolvido com o auxílio do Claude e está integrado à landing page da aplicação. A seção apresenta:
+
+* Preview visual do protótipo com animação discreta
+* Moldura de smartphone responsiva
+* Botão de acesso direto ao protótipo HTML interativo (`public/jovi-prototype.html`)
+* Componente React simplificado (`PrototypeSection.jsx`) que não transforma o HTML do protótipo em componentes React, mantendo-o como arquivo independente
+
+### Outras utilizações de IA
+
 A utilização da IA esteve principalmente relacionada a:
 
 * Auxílio na **migração da aplicação para React**.
 * Apoio na organização e componentização da estrutura do projeto.
+* Integração do **Protótipo JOVI** à landing page com estilo e animações.
 * Implementação e revisão de **validações**.
 * Auxílio na implementação de **novas funções e melhorias**.
 * Sugestões para organização e correção de código.
@@ -46,20 +59,20 @@ A implementação, adaptação, testes e decisões finais sobre o código foram 
 Instale as dependências:
 
 ```bash
-pnpm install
+npm install
 ```
 
 Inicie o servidor de desenvolvimento:
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
 Para gerar e visualizar a versão de produção:
 
 ```bash
-pnpm build
-pnpm preview
+npm run build
+npm run preview
 ```
 
 ## Rotas
@@ -92,8 +105,9 @@ src/
 │   ├── Footer.jsx
 │   ├── Header.jsx
 │   ├── Hero.jsx
-│   ├── RotaProtegida.jsx
-│   └── TeamSection.jsx
+│   ├── PrototypeSection.jsx
+│   ├── ProtectedRoute.jsx
+│   ├── TeamSection.jsx
 ├── data/
 │   ├── conteudo.js
 │   └── equipe.js
@@ -105,8 +119,18 @@ src/
     ├── dashboard.css
     ├── global.css
     ├── landing.css
-    └── login.css
+    ├── login.css
+    └── prototype.css
 ```
+
+### Protótipo
+
+```text
+public/
+└── jovi-prototype.html
+```
+
+O arquivo `jovi-prototype.html` é um protótipo interativo independente, acessível através do botão "Explorar protótipo" na seção dedicada da landing page.
 
 ## Observações
 

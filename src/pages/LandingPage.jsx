@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import FeatureSection from "../components/FeatureSection";
+import PrototypeSection from "../components/PrototypeSection";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -28,6 +29,7 @@ export default function LandingPage() {
           title="Benefícios"
           items={beneficios}
         />
+        <PrototypeSection />
       </main>
       <Footer />
     </>
